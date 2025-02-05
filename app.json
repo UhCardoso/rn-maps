@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.seudominio.nomedoapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
