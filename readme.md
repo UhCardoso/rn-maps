@@ -35,20 +35,18 @@ Antes de iniciar a configuração, certifique-se de ter os seguintes itens insta
 
 ## Configuração do Ambiente
 
-1.  **Crie um novo projeto Expo:**
+1.  **Clone o projeto:**
 
     ```bash
-    expo init MapaLocalizacao
-    cd MapaLocalizacao
+    git clone https://github.com/UhCardoso/rn-maps.git
+    cd rn-maps
     ```
 
 2.  **Instale as dependências:**
 
     ```bash
-    npm install react-native-maps expo-location
+    npm install
     ```
-
-3.  **Substitua o conteúdo do arquivo `App.js` pelo código fornecido abaixo.**
 
 ## Executando o Aplicativo
 
