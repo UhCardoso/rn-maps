@@ -14,6 +14,7 @@ export default function App() {
   const [location, setLocation] = useState<LocationObject | null>(null);
   const mapRef = useRef<MapView>(null); 
 
+  // Função para solicitar permissão de localização
   async function requestLocationPermissions() {
     const {granted} = await requestForegroundPermissionsAsync();
   
@@ -24,10 +25,12 @@ export default function App() {
     }
   }
 
+  // Solicitar permissão de localização ao carregar o aplicativo
   useEffect(() => {
     requestLocationPermissions();
   }, []);
 
+  // Atualizar a localização do usuário em tempo real
   useEffect(() => {
     watchPositionAsync({
       accuracy: LocationAccuracy.Highest,
